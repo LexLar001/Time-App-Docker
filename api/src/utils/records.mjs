@@ -36,6 +36,13 @@ const insertRecord = (time) =>
 
   insertRecord(currentTime);
 // insertRecord('2024-04-03 12:00:00')
+readRecords()
+  .then(results => {
+    console.log(results); // Результати запиту
+  })
+  .catch(error => {
+    console.error('Помилка під час читання записів:', error);
+  });
 
 const deleteRecord = (id) =>
   new Promise((resolve, reject) =>
