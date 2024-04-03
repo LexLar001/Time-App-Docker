@@ -31,6 +31,12 @@ const insertRecord = (time) =>
     })
   )
 
+
+  const currentTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
+
+  insertRecord(currentTime);
+// insertRecord('2024-04-03 12:00:00')
+
 const deleteRecord = (id) =>
   new Promise((resolve, reject) =>
     pool.getConnection((err, connection) => {

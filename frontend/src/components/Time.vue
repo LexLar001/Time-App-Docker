@@ -28,6 +28,7 @@ export default {
 
 <template>
   <div class="greetings">
+    <h1 class="green">Time-App</h1>
     <h1 class="green">{{ currentTime }}</h1>
     <h3>Press button for save time</h3>
     <button @click="saveTime">Save Time</button>
@@ -50,40 +51,42 @@ export default {
 
 <style scoped>
 h1 {
-  font-weight: 500;
-  font-size: 4rem;
-  top: -10px;
+  font-weight: bold; 
+  font-size: 3rem; 
+  margin-top: 20px; 
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem; 
 }
 
 button {
-  font-size: 1.5rem;
-  margin: 30px;
-  background-color: rgb(128, 184, 244);
-  border-radius: 5px;
+  font-size: 1rem;
+  margin: 20px; 
+  padding: 8px 16px;
+  background-color: #ff5722;
+  border-radius: 8px;
   border: none;
-  padding: 10px;
   cursor: pointer;
 }
 
 .btn-sm {
-  margin: 10px;
-  padding: 4px;
+  margin: 10px; 
+  padding: 4px 8px; 
+  font-size: 0.8rem; 
 }
 
 .bg-red {
-  background-color: rgb(184, 93, 93);
+  background-color: #ff0000; 
+  color: #ffffff; 
 }
 
 .deleted-items {
-  font-size: 1.7rem;
+  font-size: 1.2rem; 
 }
 
 .deleted-item {
-  width: 150px;
+  width: 120px;
   display: inline-block;
 }
 
